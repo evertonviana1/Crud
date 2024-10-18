@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/button.css">
+    <link rel="stylesheet" href="/assets/css/main.css">    
+    <link rel="stylesheet" href="/assets/css/regs.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
+    <script src="/assets/js/jsmain.js" defer></script>
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <h1 class="headertitulo">Cadastro de Colaboradores</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue" id="cadastrarColaborador">Cadastro de Colaborador</button>    
+    <table id="tableColaborador" class="reg">
+        <thead>
+            <tr>
+                <th>Nome Completo</th>
+                <th>Celular</th>
+                <th>Matrícula</th>
+                <th>Função</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--<tr>
+                <td>Everton Viana</td>
+                <td>92 9961532</td>
+                <td>7689-0</td>
+                <td>Desenvolvedor Sênior</td>
+                <td>
+                    <button type="button" class="button green">Editar</button>
+                    <button type="button" class="button red">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Mariane Melo</td>
+                <td>92 99999-6666</td>
+                <td>3838-3</td>
+                <td>Aprendiz</td>
+                <td>
+                    <button type="button" class="button green">Editar</button>
+                    <button type="button" class="button red">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Heitor Bernardo</td>
+                <td>92 99154-3421</td>
+                <td>0001-1</td>
+                <td>Gerente de Projetos</td>
+                <td>
+                    <button type="button" class="button green">Editar</button>
+                    <button type="button" class="button red">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Cristina Nogueira</td>
+                <td>92 994659890</td>
+                <td>0986-3</td>
+                <td>Enfermeira do Trabalho</td>
+                <td>
+                    <button type="button" class="button green">Editar</button>
+                    <button type="button" class="button red">Excluir</button>
+                </td>
+            </tr>-->
+        </tbody>
+    </table>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2>Novo Colaborador</h2>
+                <span class="modal-close" id="modalClose">&#10006;</span>
+            </header>
+            <form class="modal-form" id="form">
+                <input type="text" data-index="new" class="modal-field" id="nome" placeholder="Nome do Colaborador" required>
+                <input type="text" class="modal-field" id="celular" placeholder="Contato do Colaborador" required>
+                <input type="text" class="modal-field" id="matricula" placeholder="Matrícula do Colaborador" required>
+                <input type="text" class="modal-field" id="funcao" placeholder="Função do Colaborador" required>
+            </form>
+            <footer class="modal-footer">
+                <button class="button green" id="salvar">Salvar</button>
+                <button class="button red" id="cancelar">Cancelar</button>
+            </footer>
+        </div>
+    </div> 
+    </main>
+    <footer>
+        Praticando CRUD
+    </footer>
+</body>
+</html>
